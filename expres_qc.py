@@ -71,7 +71,7 @@ class EXPRES_QC(object):
 
         counts = []
         for info in self.info_list:
-            if info['mode'] == mode:
+            if info.mode == mode:
                 counts.append(info.exp_counts)
 
         if ax is None:
